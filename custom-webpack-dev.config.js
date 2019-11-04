@@ -6,7 +6,8 @@ module.exports = {...config,
   plugins: [new ExtensionReloader({
     reloadPage: true,
     entries: {
-      background: 'background'
+      background: 'background',
+      contentscript: 'contentscript'
     }
   })]
 }

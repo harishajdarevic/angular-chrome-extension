@@ -26,6 +26,7 @@ export class AppComponent implements OnInit {
 
     chrome.storage.sync.get(['rating'], (result) => {
       if (result.rating) {
+        console.log(document);
         this.rating = result.rating;
         this.cd.markForCheck();
         this.cd.detectChanges();
