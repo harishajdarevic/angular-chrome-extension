@@ -3,6 +3,6 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.tabs.query({ active: true, currentWindow: true }, ([{ id }]) => {
       chrome.pageAction.show(id);
     });
-  }, { url: [{ urlMatches: 'olx.ba' }] });
+  }, { url: [{ urlMatches: 'staging.e-business.cloud' }] });
 });
 
